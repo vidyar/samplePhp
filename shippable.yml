@@ -1,0 +1,29 @@
+language: php
+
+php:
+  - 5.4
+  - 5.5
+  - 5.6
+  - 7.0
+  
+  
+services:
+  - mysql
+  - postgres
+  - elasticsearch
+  - redis
+  - memcache
+  - mongo
+  - rabbitmq
+  - neo4j
+  - couchdb
+  - rethinkdb
+  
+build:
+  ci:
+    - php --version
+    
+  pre_ci_boot:
+    image_name: drydock/u14phpall
+    image_tag: prod
+    pull: true
