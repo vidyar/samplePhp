@@ -15,15 +15,13 @@ services:
   - memcache
   - mongo
   - rabbitmq
-  - neo4j
-  - couchdb
-  - rethinkdb
+  
   
 build:
   ci:
     - php --version
     
   pre_ci_boot:
-    image_name: drydock/u12phpall
+    image_name: drydock/u12phppls
     image_tag: prod
     pull: true
