@@ -1,9 +1,9 @@
 language: php
 php:
   - 5.5
-  - 5.6
+ # - 5.6
 env:
-  global:
+  #global:
     - NOUVOLA_PLAN_ID=3210
     - XUNIT_FILE=./shippable/testresults/results.xml
   #matrix:
