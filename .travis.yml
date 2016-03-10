@@ -2,5 +2,12 @@ language: php
 php:
   - 5.5
   - 5.6
+  
+branches:
+ only:
+  - test
+ except:
+  - master
+  
 build:
  ci: "true"
