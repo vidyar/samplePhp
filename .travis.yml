@@ -5,7 +5,7 @@ php:
 
 branches:
  except:
-   - master
+   - test
 env:
   global:
     - NOUVOLA_PLAN_ID=3210
