@@ -1,0 +1,3 @@
+[submodule "testprivate"]
+	path = testprivate
+	url = git@github.com:hitchcock-org/testprivate.git
