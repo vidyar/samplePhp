@@ -6,10 +6,13 @@ php:
 matrix:
  include:
    - php: 7.0
-     env: zee=zoo
+     env: 
+     - zee=zoo
+     - secure: O90kXcIKbVdm9dSpxtTTyOqd/QhSZcUOH/le4V2veRkk+0OKwLkI5O6ZghkDAG6qfm8Slv5SkAUBgpcuL9QKOASKONoynIwey7i9MfqeG2h2wcEvXI6W5LwKyj6+ChO3LA3nA0UYeOqagK4XkDU++yfjLXiQOwml2CBLDUoAbsdyV1ZXWMkQWg3s0EiiNARRPw6bUSvQXPh3R8HpWS2twe2kSQFW+xp8nbAgFdUfIIVc+ioFBgOm77P/VFyhA1bq2TbsThjK5Cn7gRs+0RVnXt65cN4Woze1lZH9ZvPa05Hs9scvhVLKp8I8/Uya8TqcvgFhyBgn6EFPe/xxa8Za+g==
+
 env:
  global:
-   - secure: O90kXcIKbVdm9dSpxtTTyOqd/QhSZcUOH/le4V2veRkk+0OKwLkI5O6ZghkDAG6qfm8Slv5SkAUBgpcuL9QKOASKONoynIwey7i9MfqeG2h2wcEvXI6W5LwKyj6+ChO3LA3nA0UYeOqagK4XkDU++yfjLXiQOwml2CBLDUoAbsdyV1ZXWMkQWg3s0EiiNARRPw6bUSvQXPh3R8HpWS2twe2kSQFW+xp8nbAgFdUfIIVc+ioFBgOm77P/VFyhA1bq2TbsThjK5Cn7gRs+0RVnXt65cN4Woze1lZH9ZvPa05Hs9scvhVLKp8I8/Uya8TqcvgFhyBgn6EFPe/xxa8Za+g==
+  # - secure: O90kXcIKbVdm9dSpxtTTyOqd/QhSZcUOH/le4V2veRkk+0OKwLkI5O6ZghkDAG6qfm8Slv5SkAUBgpcuL9QKOASKONoynIwey7i9MfqeG2h2wcEvXI6W5LwKyj6+ChO3LA3nA0UYeOqagK4XkDU++yfjLXiQOwml2CBLDUoAbsdyV1ZXWMkQWg3s0EiiNARRPw6bUSvQXPh3R8HpWS2twe2kSQFW+xp8nbAgFdUfIIVc+ioFBgOm77P/VFyhA1bq2TbsThjK5Cn7gRs+0RVnXt65cN4Woze1lZH9ZvPa05Hs9scvhVLKp8I8/Uya8TqcvgFhyBgn6EFPe/xxa8Za+g==
    - foo=bar
    
 branches:
