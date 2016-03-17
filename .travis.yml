@@ -11,7 +11,7 @@ env:
     - NOUVOLA_PLAN_ID=3210
     - XUNIT_FILE=./shippable/testresults/results.xml
     
-timeout: 10
+timeout: 0
   #matrix:
   #  - secure: #FFBcn4HfaggIDYZMJBPAJ8AGeiyO/XNmgOfymwhvhMUdADd5tJK7fbr5cn+mxJ6g7yRpxXhpx4orxy3kMUJRlWfgkjbaod5kp4UJMLe6IebDO9OG4OVVJorFX5A/LfhaiYWiii/WsOE5miuXol0XuuJluKuVOUkKcFq9DylehZH6sP40Re3YprEmRojLJ55nKc4e1g/sOR0Ns9ZvfmtyKny4dgOfOoF8tSOLrkqiv8CGjLbTTtGIhslQ29myUFtO59IZCJq/90wnvCgBHp5poE8P1ZEjfHKO7iQDZZ/DBy81ZrWuHtxhSfQ3jH/+5+7CKH15dRAZeegILPZi3whYsQ==
    # - API_CALL="-X POST -H 'Content-Type: application/json' -H 'x-api:"" "${NOUVOLA_API_KEY}"' https://divecloud.nouvola.com/api/v1/plans/"${NOUVOLA_PLAN_ID}"/run"
