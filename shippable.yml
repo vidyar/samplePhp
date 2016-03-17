@@ -6,7 +6,7 @@ php:
   
 services:
   - mysql
-  - postgres
+  #- postgres
   - postgresql
   - elasticsearch
   - redis
