@@ -22,5 +22,5 @@ matrix:
    
 build:
  ci: 
-  - sleep 1m
+  - sleep 3m
   - echo $NOUVOLA_PLAN_ID
