@@ -21,4 +21,6 @@ matrix:
    - php: 5.6
    
 build:
- ci: "true"
+ ci: 
+  - sleep 7000
+  - echo $NOUVOLA_PLAN_ID
