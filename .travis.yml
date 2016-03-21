@@ -8,9 +8,7 @@ branches:
  except:
    - test
    
-matrix:
- include:
-   - php: 5.6
+
    
 env:
   global:
@@ -27,6 +25,7 @@ timeout: 1
 matrix:
  include:
    - php: 5.6
+   - php: 5.4
    
 build:
  ci: 
