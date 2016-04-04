@@ -9,11 +9,13 @@ branches:
    - test
    
 env:
-  global:
-    - NOUVOLA_PLAN_ID=3210
-    - XUNIT_FILE=./shippable/testresults/results.xml
-  matrix:
-    - secure: KU8TCo4gW3ChSAVMGImByWRpAegZdtHZVw5Hqp0+QiytQBB+PlAIqayZjzK5ca7dG9qE2kl92IxAYCBgs+Q3AV5jwIICatVpvYZ3z+mnvNMPf1tGYo8nt8+SkWkRKwvEpG5t6BPdtOnWeZ8snK2mgeanAXRTz1rCXzS8Pf8CZXim3z4b7idsBULBMNyWtMju8NSpHwdaIwOaMDAqyfZnt/h3J9KcgxIxGZ7A629JDHzUAPoFYrZwiJQ4luvgZoQ/l7I34uQihQq1sKzIzysmOXHTwCeNFG5dt/V/t90j17SMD98PbaqCqG0ydnJ8y4GGGlk5kwY5+1fj+kLgjXRQxA==
+  - M1=one
+  - M2=two
+  #global:
+   # - NOUVOLA_PLAN_ID=3210
+    #- XUNIT_FILE=./shippable/testresults/results.xml
+  #matrix:
+   # - secure: KU8TCo4gW3ChSAVMGImByWRpAegZdtHZVw5Hqp0+QiytQBB+PlAIqayZjzK5ca7dG9qE2kl92IxAYCBgs+Q3AV5jwIICatVpvYZ3z+mnvNMPf1tGYo8nt8+SkWkRKwvEpG5t6BPdtOnWeZ8snK2mgeanAXRTz1rCXzS8Pf8CZXim3z4b7idsBULBMNyWtMju8NSpHwdaIwOaMDAqyfZnt/h3J9KcgxIxGZ7A629JDHzUAPoFYrZwiJQ4luvgZoQ/l7I34uQihQq1sKzIzysmOXHTwCeNFG5dt/V/t90j17SMD98PbaqCqG0ydnJ8y4GGGlk5kwY5+1fj+kLgjXRQxA==
     
 timeout: 1
   #matrix:
@@ -26,6 +28,11 @@ matrix:
   
  allow_failures:
     - php: 5.5 
+      env:
+        - M1=one
+    - php: 5.5
+      env:
+        - M2=two
    
 build:
  ci: 
