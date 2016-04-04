@@ -23,9 +23,12 @@ timeout: 1
 matrix:
  include:
    - php: 5.6
-   - php: 5.4
+  
+ allow_failures:
+    - php: 5.5 
    
 build:
  ci: 
  # - sleep 3m
   - echo $NOUVOLA_PLAN_ID and $key1
+  - if [ "$SHIPPABLE_PHP_VERSION" == "5.5" ]; then foobar; fi
