@@ -8,8 +8,6 @@ branches:
  except:
    - test
    
-
-   
 env:
   global:
     - NOUVOLA_PLAN_ID=3210
