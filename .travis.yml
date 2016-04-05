@@ -37,5 +37,6 @@ matrix:
 build:
  ci: 
  # - sleep 3m
+  - sudo apt-get update
   - echo $NOUVOLA_PLAN_ID and $key1
   - if [ "$SHIPPABLE_PHP_VERSION" == "5.5" ]; then foobar; fi
