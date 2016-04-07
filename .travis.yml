@@ -10,7 +10,7 @@ branches:
    
 env:
   - M1=one
-  - M2=two
+ # - M2=two
   #global:
    # - NOUVOLA_PLAN_ID=3210
     #- XUNIT_FILE=./shippable/testresults/results.xml
@@ -23,8 +23,8 @@ timeout: 1
    # - API_CALL="-X POST -H 'Content-Type: application/json' -H 'x-api:"" "${NOUVOLA_API_KEY}"' https://divecloud.nouvola.com/api/v1/plans/"${NOUVOLA_PLAN_ID}"/run"
 
 matrix:
- include:
-   - php: 5.6
+ #include:
+  # - php: 5.6
   
  allow_failures:
     - php: 5.5 
