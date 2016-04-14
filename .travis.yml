@@ -23,4 +23,4 @@ branches:
   
 build:
  ci: 
-   - echo $zee and $foo and $key1
+   - echo $zee and $foo and $key1 
